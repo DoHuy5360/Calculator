@@ -141,6 +141,20 @@
 					transform: translateY(0);
 				}
 			}
+			@media only screen and (max-width: 400px) {
+				.wrap {
+					flex-direction: column;
+				}
+				.wrap__history {
+					width: 225px;
+				}
+				.wrap:has(#options:checked) .wrap__history {
+					height: fit-content;
+				}
+				.wrap:has(#options:checked) .previous__expression:nth-child(n + 4) {
+					display: none;
+				}
+			}
 		</style>
 	</head>
 	<body>
